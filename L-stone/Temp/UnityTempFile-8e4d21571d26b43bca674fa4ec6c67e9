@@ -51,7 +51,7 @@
 'Assets/Scripts/App/Scene/GameScene.cs'
 'Assets/Scripts/App/Scene/LoginScene.cs'
 'Assets/Scripts/App/Scene/TittleScene.cs'
-'Assets/Scripts/App/Util/GAMEAlgorithm.cs'
+'Assets/Scripts/App/Util/GAMEUtil.cs'
 'Assets/Scripts/Core/Controller/GUIBase.cs'
 'Assets/Scripts/Core/Controller/INPUT_INFO.cs'
 'Assets/Scripts/Core/Controller/UIEvent.cs'

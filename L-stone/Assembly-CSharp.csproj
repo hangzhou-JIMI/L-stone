@@ -57,7 +57,7 @@
      <Compile Include="Assets\Scripts\App\Scene\GameScene.cs" />
      <Compile Include="Assets\Scripts\App\Scene\LoginScene.cs" />
      <Compile Include="Assets\Scripts\App\Scene\TittleScene.cs" />
-     <Compile Include="Assets\Scripts\App\Util\GAMEAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\App\Util\GAMEUtil.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\GUIBase.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\INPUT_INFO.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\UIEvent.cs" />

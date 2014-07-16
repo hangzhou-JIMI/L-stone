@@ -11,7 +11,7 @@ using System.Collections;
 /// <summary>
 /// GAME algorithm.
 /// </summary>
-public class GAMEAlgorithm
+public class GAMEUtil
 {
 	/// <summary>
 	/// Calculate the specified level, self and pc.
@@ -19,7 +19,7 @@ public class GAMEAlgorithm
 	/// <param name="level">Level.</param>
 	/// <param name="self">Self.</param>
 	/// <param name="pc">Pc.</param>
-	public static int Calculate(int level , out int self , out int pc )
+	public static int StoneCalculate(int level , out int self , out int pc )
 	{
 		self = Random.Range(0,3);
 		pc = Random.Range(0,3);

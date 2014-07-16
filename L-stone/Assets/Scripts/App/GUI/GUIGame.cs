@@ -81,7 +81,7 @@ public class GUIGame : GUIBase<GUIGame>
 		this.m_cSelfAni.Stop();
 		this.m_cPcAni.Stop();
 		int self , pc;
-		int win =GAMEAlgorithm.Calculate(GameData.s_iLevel , out self , out pc);
+		int win =GAMEUtil.StoneCalculate(GameData.s_iLevel , out self , out pc);
 		switch(win)
 		{
 		case 0:
