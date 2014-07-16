@@ -151,6 +151,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
@@ -168,8 +169,13 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+ <Reference Include="Unity3DGameResource">
+ <HintPath>/Users/luzexi/Desktop/Work/Project/L-stone/L-stone/Assets/Scripts/Core/Resource/Unity3DGameResource.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6F3E7B0E-08DA-2FB8-7CFC-B0E3F2F4B272}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{770EB5CE-CBE9-AF10-2C70-181DE5F5EFC3}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
