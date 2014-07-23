@@ -46,7 +46,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\test.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUIGame.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUILogin.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUIMusic.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUIProducer.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUISetting.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUITittle.cs" />
+     <Compile Include="Assets\Scripts\App\GUI\GUI_DEFINE.cs" />
+     <Compile Include="Assets\Scripts\App\Model\GameData.cs" />
+     <Compile Include="Assets\Scripts\App\Scene\GameScene.cs" />
+     <Compile Include="Assets\Scripts\App\Scene\LoginScene.cs" />
+     <Compile Include="Assets\Scripts\App\Scene\TittleScene.cs" />
+     <Compile Include="Assets\Scripts\App\Util\GAMEUtil.cs" />
+     <Compile Include="Assets\Scripts\Core\Controller\GUIBase.cs" />
+     <Compile Include="Assets\Scripts\Core\Controller\INPUT_INFO.cs" />
+     <Compile Include="Assets\Scripts\Core\Controller\UIEvent.cs" />
+     <Compile Include="Assets\Scripts\Core\Main\CApplication.cs" />
+     <Compile Include="Assets\Scripts\Core\Scene\CScene.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
@@ -141,6 +157,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
@@ -149,6 +166,13 @@
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
+ <Reference Include="Unity3DGameResource">
+ <HintPath>/Users/luzexi/Desktop/Work/Project/L-stone/L-stone/Assets/Scripts/Core/Resource/Unity3DGameResource.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{6F3E7B0E-08DA-2FB8-7CFC-B0E3F2F4B272}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
