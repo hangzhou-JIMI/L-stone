@@ -18,7 +18,8 @@ public class TittleScene : CScene
 	public override void OnEnter ()
 	{
 		base.OnEnter ();
-		GUITittle.sInstance.Show();
+		GameData.Load();
+		UITittleController.sInstance.Show();
 	}
 	
 	/// <summary>
@@ -27,7 +28,7 @@ public class TittleScene : CScene
 	public override void OnExit ()
 	{
 		base.OnExit ();
-		GUITittle.sInstance.Hiden();
+		UITittleController.sInstance.Hiden();
 	}
 }
 

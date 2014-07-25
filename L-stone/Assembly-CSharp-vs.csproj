@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_0;UNITY_4_5;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_0;UNITY_4_5;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,23 +46,41 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\App\GUI\GUIGame.cs" />
-     <Compile Include="Assets\Scripts\App\GUI\GUILogin.cs" />
-     <Compile Include="Assets\Scripts\App\GUI\GUIMusic.cs" />
-     <Compile Include="Assets\Scripts\App\GUI\GUIProducer.cs" />
-     <Compile Include="Assets\Scripts\App\GUI\GUISetting.cs" />
-     <Compile Include="Assets\Scripts\App\GUI\GUITittle.cs" />
-     <Compile Include="Assets\Scripts\App\GUI\GUI_DEFINE.cs" />
+     <Compile Include="Assets\APPUIView\UIViewGame.cs" />
+     <Compile Include="Assets\APPUIView\UIViewGameLose.cs" />
+     <Compile Include="Assets\APPUIView\UIViewGamePing.cs" />
+     <Compile Include="Assets\APPUIView\UIViewGameWin.cs" />
+     <Compile Include="Assets\APPUIView\UIViewLogin.cs" />
+     <Compile Include="Assets\APPUIView\UIViewMusic.cs" />
+     <Compile Include="Assets\APPUIView\UIViewProducer.cs" />
+     <Compile Include="Assets\APPUIView\UIViewSetting.cs" />
+     <Compile Include="Assets\APPUIView\UIViewTittle.cs" />
      <Compile Include="Assets\Scripts\App\Model\GameData.cs" />
+     <Compile Include="Assets\Scripts\App\Model\Model\Model.cs" />
+     <Compile Include="Assets\Scripts\App\Model\Model\ModelMgr.cs" />
+     <Compile Include="Assets\Scripts\App\Model\Model\SimpleJSON.cs" />
      <Compile Include="Assets\Scripts\App\Scene\GameScene.cs" />
      <Compile Include="Assets\Scripts\App\Scene\LoginScene.cs" />
      <Compile Include="Assets\Scripts\App\Scene\TittleScene.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIGameController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIGameFinalController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIGameLoseController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIGamePingController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIGameWinController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UILoginController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIMusicController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIProducerController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UISettingController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UITittleController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\GUI_DEFINE.cs" />
      <Compile Include="Assets\Scripts\App\Util\GAMEUtil.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\GUIBase.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\INPUT_INFO.cs" />
+     <Compile Include="Assets\Scripts\Core\Controller\UIControllerBase.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\UIEvent.cs" />
      <Compile Include="Assets\Scripts\Core\Main\CApplication.cs" />
      <Compile Include="Assets\Scripts\Core\Scene\CScene.cs" />
+     <Compile Include="Assets\Scripts\Core\View\UIViewBase.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />

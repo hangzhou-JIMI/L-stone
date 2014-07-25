@@ -257,6 +257,10 @@ public abstract class tk2dBaseSprite : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			SetSprite(spriteId);
 		}
 		else {
+			foreach( tk2dSpriteDefinition item in collection.spriteDefinitions  )
+			{
+				Debug.Log(item.name);
+			}
 			Debug.LogError("SetSprite - Sprite not found in collection: " + spriteName);
 		}
 		return spriteId != -1;
