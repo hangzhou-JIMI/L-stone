@@ -59,6 +59,7 @@ public class UIGameController : UIControllerBase<UIGameController>
 	{
 		base.Hiden ();
 		Destroy();
+		WapsUnitySDK.sInstance.closeBanner();
 	}
 
 	/// <summary>

@@ -36,6 +36,8 @@ public class UILoginController : UIControllerBase<UILoginController>
 		start2.OnClick += OnClickStart2;
 		tk2dUIItem setting = this.m_cView.setting;
 		setting.OnClick += OnClickSetting;
+
+		this.m_cView.other.OnClick += OnClickOther;
 	}
 
 	/// <summary>
@@ -63,6 +65,14 @@ public class UILoginController : UIControllerBase<UILoginController>
 	{
 		Hiden();
 		UIGameFinalController.sInstance.Show();
+	}
+
+	/// <summary>
+	/// Raises the click other event.
+	/// </summary>
+	private void OnClickOther()
+	{
+		WapsUnitySDK.sInstance.offerShowAction();
 	}
 
 	/// <summary>

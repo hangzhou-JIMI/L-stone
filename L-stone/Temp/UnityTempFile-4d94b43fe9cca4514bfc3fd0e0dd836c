@@ -68,6 +68,7 @@
 'Assets/Scripts/App/UI/Controller/UITittleController.cs'
 'Assets/Scripts/App/UI/GUI_DEFINE.cs'
 'Assets/Scripts/App/Util/GAMEUtil.cs'
+'Assets/Scripts/Core/Advertisement/WapsUnitySDK.cs'
 'Assets/Scripts/Core/Controller/GUIBase.cs'
 'Assets/Scripts/Core/Controller/INPUT_INFO.cs'
 'Assets/Scripts/Core/Controller/UIControllerBase.cs'

@@ -15,6 +15,7 @@ public class UIGamePingController : UIControllerBase<UIGamePingController>
 {
 	private const string MAIN_RES = "GUIGamePing";	//main res
 	private UIViewGamePing m_cView;	//view
+	private static int s_iPingNum = 0;
 	
 	/// <summary>
 	/// Show view
@@ -32,6 +33,12 @@ public class UIGamePingController : UIControllerBase<UIGamePingController>
 		this.m_cView = this.m_cMain.GetComponent<UIViewGamePing>();
 		this.m_cView.back.OnClick += OnClickBackground;
 		this.m_cView.share.OnClick += OnClickShare;
+
+		s_iPingNum++;
+		if(s_iPingNum % 3 == 0)
+		{
+			WapsUnitySDK.sInstance.showBanner();
+		}
 	}
 	
 	/// <summary>

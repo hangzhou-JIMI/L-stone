@@ -33,6 +33,8 @@
 -define:ENABLE_AUDIO
 -define:ENABLE_NAVMESH_CARVING
 -define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:DEVELOPMENT_BUILD
+-define:ENABLE_PROFILER
 -define:UNITY_PRO_LICENSE
 'Assets/Plugins/Pixelplacement/iTween/Sample/MoveSample.cs'
 'Assets/Plugins/Pixelplacement/iTween/Sample/RotateSample.cs'

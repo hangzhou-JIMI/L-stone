@@ -16,6 +16,7 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 {
 	private const string MAIN_RES = "GUIGameLose";	//main res
 	private UIViewGameLose m_cView;	//view
+	private static int s_iLoseNum = 0;
 	
 	/// <summary>
 	/// Show view
@@ -33,6 +34,13 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 		this.m_cView = this.m_cMain.GetComponent<UIViewGameLose>();
 		this.m_cView.back.OnClick += OnClickBackground;
 		this.m_cView.share.OnClick += OnClickShare;
+
+		s_iLoseNum++;
+
+		if( s_iLoseNum % 5 == 0)
+		{
+			WapsUnitySDK.sInstance.popShowAction();
+		}
 	}
 	
 	/// <summary>
