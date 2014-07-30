@@ -10,12 +10,12 @@ public class GameData
 {
 	public static int s_iLevel = 1;	//the level of the lstone
 
-	public void Save()
+	public static void Save()
 	{
 		PlayerPrefs.SetInt("level",s_iLevel);
 	}
 
-	public void Load()
+	public static void Load()
 	{
 		s_iLevel = PlayerPrefs.GetInt("level");
 	}
