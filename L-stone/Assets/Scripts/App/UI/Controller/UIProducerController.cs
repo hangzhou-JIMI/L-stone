@@ -2,6 +2,7 @@
 using System.Collections;
 using Game.MVC;
 using Game.Resource;
+using Game.Media;
 
 
 //	GUIProducer.cs
@@ -48,5 +49,6 @@ public class UIProducerController : UIControllerBase<UIProducerController>
 	{
 		Hiden();
 		UISettingController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }

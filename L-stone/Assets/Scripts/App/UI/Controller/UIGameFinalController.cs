@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Game.Resource;
+using Game.Media;
 
 
 //	UIGameFinalController.cs
@@ -50,8 +51,10 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 
 		this.m_iLevel = 1;
 		this.m_cView.level.text = "" + this.m_iLevel;
-		
+		WapsUnitySDK.sInstance.showBanner();
 		StartGame();
+
+		MediaMgr.sInstance.PlayBGM(GUI_DEFINE.BGM_game);
 	}
 	
 	/// <summary>
@@ -77,6 +80,8 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 	/// </summary>
 	private void OnClickStop()
 	{
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_playbtn);
+
 		this.m_cView.selfAni.Stop();
 		this.m_cView.pcAni.Stop();
 		int self , pc;
@@ -136,6 +141,8 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 	{
 		Hiden();
 		UILoginController.sInstance.Show();
+
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }
 

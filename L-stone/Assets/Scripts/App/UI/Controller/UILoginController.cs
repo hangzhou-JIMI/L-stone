@@ -2,6 +2,7 @@
 using System.Collections;
 using Game.MVC;
 using Game.Resource;
+using Game.Media;
 
 //	GUILogin.cs
 //	Author: Lu Zexi
@@ -38,6 +39,7 @@ public class UILoginController : UIControllerBase<UILoginController>
 		setting.OnClick += OnClickSetting;
 
 		this.m_cView.other.OnClick += OnClickOther;
+		MediaMgr.sInstance.PlayBGM(GUI_DEFINE.BGM_login,true);
 	}
 
 	/// <summary>
@@ -56,6 +58,7 @@ public class UILoginController : UIControllerBase<UILoginController>
 	{
 		Hiden();
 		UIGameController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -65,6 +68,7 @@ public class UILoginController : UIControllerBase<UILoginController>
 	{
 		Hiden();
 		UIGameFinalController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -73,6 +77,7 @@ public class UILoginController : UIControllerBase<UILoginController>
 	private void OnClickOther()
 	{
 		WapsUnitySDK.sInstance.offerShowAction();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -82,5 +87,6 @@ public class UILoginController : UIControllerBase<UILoginController>
 	{
 		Hiden();
 		UISettingController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }

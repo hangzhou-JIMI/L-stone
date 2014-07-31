@@ -2,6 +2,7 @@
 using System.Collections;
 using Game.MVC;
 using Game.Resource;
+using Game.Media;
 
 
 /// <summary>
@@ -42,6 +43,7 @@ public class UIMusicController : UIControllerBase<UIMusicController>
 	{
 		Hiden();
 		UISettingController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 }

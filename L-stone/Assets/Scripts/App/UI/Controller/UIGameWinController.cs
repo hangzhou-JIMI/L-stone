@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Game.Resource;
+using Game.Media;
 
 //	UIGameWinController.cs
 //	Author: Lu Zexi
@@ -15,6 +16,7 @@ public class UIGameWinController : UIControllerBase<UIGameWinController>
 {
 	private const string MAIN_RES = "GUIGameWin";	//main res
 	private UIViewGameWin m_cView;	//view
+	private float m_fStartTime;	//start time
 
 	/// <summary>
 	/// Show view
@@ -33,6 +35,9 @@ public class UIGameWinController : UIControllerBase<UIGameWinController>
 		this.m_cView.back.OnClick += OnClickBackground;
 		this.m_cView.play.OnClick += OnClickBackground;
 		this.m_cView.share.OnClick += OnClickShare;
+
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_win);
+		this.m_fStartTime = Time.fixedTime;
 	}
 
 	/// <summary>
@@ -50,6 +55,7 @@ public class UIGameWinController : UIControllerBase<UIGameWinController>
 	private void OnClickShare()
 	{
 		Debug.Log("share");
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -57,11 +63,16 @@ public class UIGameWinController : UIControllerBase<UIGameWinController>
 	/// </summary>
 	private void OnClickBackground()
 	{
+		if( Time.fixedTime - this.m_fStartTime < 1f)
+			return;
+
+
 		Hiden();
 		if(UIGameController.sInstance.IsShow)
 			UIGameController.sInstance.StartGame();
 		else if(UIGameFinalController.sInstance.IsShow)
 			UIGameFinalController.sInstance.StartGame();
+		//MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }
 
