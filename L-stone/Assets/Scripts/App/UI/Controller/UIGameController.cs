@@ -2,6 +2,7 @@
 using System.Collections;
 using Game.MVC;
 using Game.Resource;
+using Game.Media;
 
 
 //	GUIGame.cs
@@ -48,8 +49,10 @@ public class UIGameController : UIControllerBase<UIGameController>
 		stopBtn.OnClick += OnClickStop;
 
 		this.m_cView.level.text = "" + GameData.s_iLevel;
-
+		WapsUnitySDK.sInstance.showBanner();
 		StartGame();
+
+		MediaMgr.sInstance.PlayBGM(GUI_DEFINE.BGM_game);
 	}
 
 	/// <summary>
@@ -75,6 +78,8 @@ public class UIGameController : UIControllerBase<UIGameController>
 	/// </summary>
 	private void OnClickStop()
 	{
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_playbtn);
+
 		this.m_cView.selfAni.Stop();
 		this.m_cView.pcAni.Stop();
 		int self , pc;

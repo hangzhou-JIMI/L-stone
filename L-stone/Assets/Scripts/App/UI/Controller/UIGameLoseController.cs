@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Game.Resource;
+using Game.Media;
 
 
 //	UIGameLoseController.cs
@@ -17,6 +18,7 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 	private const string MAIN_RES = "GUIGameLose";	//main res
 	private UIViewGameLose m_cView;	//view
 	private static int s_iLoseNum = 0;
+	private float m_fStartTime;
 	
 	/// <summary>
 	/// Show view
@@ -35,9 +37,12 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 		this.m_cView.back.OnClick += OnClickBackground;
 		this.m_cView.share.OnClick += OnClickShare;
 
+		this.m_fStartTime = Time.fixedTime;
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_lose);
+
 		s_iLoseNum++;
 
-		if( s_iLoseNum % 5 == 0)
+		if( s_iLoseNum % 8 == 0)
 		{
 			WapsUnitySDK.sInstance.popShowAction();
 		}
@@ -57,6 +62,8 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 	/// </summary>
 	private void OnClickBackground()
 	{
+		if( Time.fixedTime - this.m_fStartTime < 1f)
+			return;
 		Hiden();
 		if(UIGameController.sInstance.IsShow)
 		{
@@ -67,6 +74,7 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 			UIGameFinalController.sInstance.Hiden();
 			UILoginController.sInstance.Show();
 		}
+		//MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -75,6 +83,7 @@ public class UIGameLoseController : UIControllerBase<UIGameLoseController>
 	private void OnClickShare()
 	{
 		//
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }
 

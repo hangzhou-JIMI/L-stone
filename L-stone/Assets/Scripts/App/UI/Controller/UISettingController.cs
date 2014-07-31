@@ -2,6 +2,7 @@
 using System.Collections;
 using Game.MVC;
 using Game.Resource;
+using Game.Media;
 
 
 //	GUISetting.cs
@@ -55,6 +56,7 @@ public class UISettingController : UIControllerBase<UISettingController>
 	{
 		Hiden();
 		UIMusicController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -64,6 +66,7 @@ public class UISettingController : UIControllerBase<UISettingController>
 	{
 		Hiden();
 		UIProducerController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -73,5 +76,6 @@ public class UISettingController : UIControllerBase<UISettingController>
 	{
 		Hiden();
 		UILoginController.sInstance.Show();
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }

@@ -23,7 +23,7 @@ public class GAMEUtil
 	{
 		self = Random.Range(0,3);
 		pc = self;
-		float winRate = (1f-CubicIn(level/100f,0,1,1))*0.9f;
+		float winRate = 0.5f-CubicIn(level/100f,0,1,1)*0.2f;
 		float pingRate = (1-winRate)/2f;
 		Debug.Log(pingRate + " - " + winRate);
 		int result = BET( pingRate , winRate );

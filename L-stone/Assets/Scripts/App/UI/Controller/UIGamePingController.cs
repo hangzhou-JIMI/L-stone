@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Game.Resource;
-
+using Game.Media;
 
 //	UIGamePingController.cs
 //	Author: Lu Zexi
@@ -16,6 +16,7 @@ public class UIGamePingController : UIControllerBase<UIGamePingController>
 	private const string MAIN_RES = "GUIGamePing";	//main res
 	private UIViewGamePing m_cView;	//view
 	private static int s_iPingNum = 0;
+	private float m_fStartTime;
 	
 	/// <summary>
 	/// Show view
@@ -34,10 +35,13 @@ public class UIGamePingController : UIControllerBase<UIGamePingController>
 		this.m_cView.back.OnClick += OnClickBackground;
 		this.m_cView.share.OnClick += OnClickShare;
 
+		this.m_fStartTime = Time.fixedTime;
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_ping);
+
 		s_iPingNum++;
 		if(s_iPingNum % 3 == 0)
 		{
-			WapsUnitySDK.sInstance.showBanner();
+			//WapsUnitySDK.sInstance.showBanner();
 		}
 	}
 	
@@ -55,11 +59,14 @@ public class UIGamePingController : UIControllerBase<UIGamePingController>
 	/// </summary>
 	private void OnClickBackground()
 	{
+		if( Time.fixedTime - this.m_fStartTime < 1f)
+			return;
 		Hiden();
 		if(UIGameController.sInstance.IsShow)
 			UIGameController.sInstance.StartGame();
 		else if(UIGameFinalController.sInstance.IsShow)
 			UIGameFinalController.sInstance.StartGame();
+		//MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 
 	/// <summary>
@@ -68,6 +75,7 @@ public class UIGamePingController : UIControllerBase<UIGamePingController>
 	private void OnClickShare()
 	{
 		//
+		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 	}
 }
 
