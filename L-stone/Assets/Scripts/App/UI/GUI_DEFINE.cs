@@ -12,6 +12,8 @@ using System.Collections;
 /// </summary>
 public class GUI_DEFINE
 {
+	public readonly static string SHARE_IMG = Application.persistentDataPath + "/SHARE_IMG.png";
+
 	public const string BGM_login ="Music/BGM_login";
 	public const string BGM_game = "Music/BGM_game";
 	public const string SE_btn = "Music/SE_btn";
