@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System;
+using System.IO;
 using System.Collections;
 
 //	TittleScene.cs
@@ -18,6 +20,10 @@ public class TittleScene : CScene
 	public override void OnEnter ()
 	{
 		base.OnEnter ();
+		Texture2D tex = Resources.Load("SHARE_IMG") as Texture2D;
+		byte[] data = tex.EncodeToPNG();
+		File.WriteAllBytes(GUI_DEFINE.SHARE_IMG , data);
+		WeiboShare.sInstance.Init();
 		GameData.Load();
 		UITittleController.sInstance.Show();
 	}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using Game.Resource;
 using Game.Media;
@@ -56,6 +57,7 @@ public class UIGameWinController : UIControllerBase<UIGameWinController>
 	{
 		Debug.Log("share");
 		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
+		WeiboShare.sInstance.Share(Uri.EscapeUriString("我已经到了"+GameData.s_iLevel+"层，这个游戏根本停不下来。http://www.luzexi.com"),GUI_DEFINE.SHARE_IMG);
 	}
 
 	/// <summary>

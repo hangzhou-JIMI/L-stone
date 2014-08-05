@@ -84,6 +84,7 @@
      <Compile Include="Assets\Scripts\Core\Media\MediaMgr.cs" />
      <Compile Include="Assets\Scripts\Core\Scene\CScene.cs" />
      <Compile Include="Assets\Scripts\Core\View\UIViewBase.cs" />
+     <Compile Include="Assets\Scripts\Core\WeiboShare\WeiboShare.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
