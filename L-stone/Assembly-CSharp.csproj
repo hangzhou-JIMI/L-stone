@@ -48,9 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\APPUIView\UIViewGame.cs" />
      <Compile Include="Assets\APPUIView\UIViewGameLose.cs" />
+     <Compile Include="Assets\APPUIView\UIViewGameLoseEx.cs" />
      <Compile Include="Assets\APPUIView\UIViewGamePing.cs" />
      <Compile Include="Assets\APPUIView\UIViewGameWin.cs" />
+     <Compile Include="Assets\APPUIView\UIViewLoading.cs" />
      <Compile Include="Assets\APPUIView\UIViewLogin.cs" />
+     <Compile Include="Assets\APPUIView\UIViewMessage.cs" />
      <Compile Include="Assets\APPUIView\UIViewMusic.cs" />
      <Compile Include="Assets\APPUIView\UIViewProducer.cs" />
      <Compile Include="Assets\APPUIView\UIViewSetting.cs" />
@@ -65,9 +68,12 @@
      <Compile Include="Assets\Scripts\App\UI\Controller\UIGameController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UIGameFinalController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UIGameLoseController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIGameLoseExController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UIGamePingController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UIGameWinController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UILoadingController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UILoginController.cs" />
+     <Compile Include="Assets\Scripts\App\UI\Controller\UIMessageController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UIMusicController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UIProducerController.cs" />
      <Compile Include="Assets\Scripts\App\UI\Controller\UISettingController.cs" />
@@ -188,9 +194,6 @@
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
- <Reference Include="Unity3DGameResource">
- <HintPath>/Users/luzexi/Desktop/Work/Project/L-stone/L-stone/Assets/Scripts/Core/Resource/Unity3DGameResource.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

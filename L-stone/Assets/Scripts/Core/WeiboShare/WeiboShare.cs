@@ -45,8 +45,10 @@ public class WeiboShare : MonoBehaviour
 		this.m_strToken = "";
 	}
 
+#if UNITY_IPHONE && !UNITY_EDITOR
 	[DllImport("__Internal")]
 	private static extern void _weiboInit(string gameObject);
+#endif
 	public void Init()
 	{
 		this.m_strToken = PlayerPrefs.GetString("weibo_token");
@@ -55,7 +57,9 @@ public class WeiboShare : MonoBehaviour
 			this.m_lTokenTime = long.Parse(strTime);
 		else
 			this.m_lTokenTime = 0;
+#if UNITY_IPHONE && !UNITY_EDITOR
 		_weiboInit("WeiboShare");
+#endif
 	}
 
 	[DllImport("__Internal")]
@@ -71,6 +75,7 @@ public class WeiboShare : MonoBehaviour
 	private static extern void _weiboShare(string token , string msg);
 	public void Share( string msg ,string imgPath = "" )
 	{
+		UILoadingController.sInstance.Show();
 		Debug.Log("u3d Share");
 		this.m_strMsg = msg;
 		this.m_strImgPath = imgPath;
@@ -113,5 +118,7 @@ public class WeiboShare : MonoBehaviour
 	public void OnShare(string res)
 	{
 		Debug.Log("onshare " + res);
+		UILoadingController.sInstance.Hiden();
+		UIMessageController.sInstance.Show();
 	}
 }

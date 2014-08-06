@@ -6,7 +6,6 @@
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp.dll'
--r:'Assets/Scripts/Core/Resource/Unity3DGameResource.dll'
 -r:'Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll'
 -r:'Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
