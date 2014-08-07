@@ -1,44 +1,33 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/App/UI/GUI_DEFINE.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/APPUIView/UIViewGameLoseEx.cs">
     <Files>
-      <File FileName="Assets/Scripts/App/UI/GUI_DEFINE.cs" Line="17" Column="51" />
-      <File FileName="Assets/Scripts/Core/Advertisement/WapsUnitySDK.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UIGameController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UIGamePingController.cs" Line="79" Column="94" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UIGameWinController.cs" Line="59" Column="3" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UIGameLoseController.cs" Line="87" Column="88" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UILoginController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UIGameWinController.cs" Line="63" Column="44" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UIGamePingController.cs" Line="81" Column="44" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UIGameLoseController.cs" Line="90" Column="44" />
       <File FileName="Assets/Scripts/App/UI/Controller/UIGameFinalController.cs" Line="1" Column="1" />
-      <File FileName="../../../../WapsOffer_ForUnity3D_1.1/WapsOffer_ForUnity3D/WapsSDK/WapsSDK.m" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UITittleController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Core/Media/MediaMgr.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UISettingController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UIProducerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UIGameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UILoginController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/App/UI/Controller/UIMusicController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/Util/GAMEUtil.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/Scene/GameScene.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/Scene/TittleScene.cs" Line="24" Column="51" />
-      <File FileName="Assets/Scripts/App/Scene/LoginScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UIProducerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UISettingController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UITittleController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UIMessageController.cs" Line="26" Column="64" />
+      <File FileName="Assets/APPUIView/UIViewMessage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/App/UI/Controller/UILoadingController.cs" Line="27" Column="64" />
+      <File FileName="Assets/APPUIView/UIViewLoading.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Core/WeiboShare/WeiboShare.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Core/Advertisement/WapsUnitySDK.cs" Line="1" Column="1" />
+      <File FileName="Assets/APPUIView/UIViewTittle.cs" Line="1" Column="1" />
+      <File FileName="Assets/APPUIView/UIViewGameLose.cs" Line="13" Column="1" />
+      <File FileName="Assets/APPUIView/UIViewGameLoseEx.cs" Line="16" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="App" expanded="True">
-                <Node name="Scene" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="Controller" expanded="True" />
-                  <Node name="GUI_DEFINE.cs" selected="True" />
-                </Node>
-                <Node name="Util" expanded="True" />
-              </Node>
-              <Node name="Core" expanded="True">
-                <Node name="Advertisement" expanded="True" />
-                <Node name="Controller" expanded="True" />
-                <Node name="Media" expanded="True" />
-              </Node>
+            <Node name="APPUIView" expanded="True">
+              <Node name="UIViewGameLoseEx.cs" selected="True" />
             </Node>
           </Node>
         </State>

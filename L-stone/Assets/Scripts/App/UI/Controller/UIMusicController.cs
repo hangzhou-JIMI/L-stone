@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Game.MVC;
-using Game.Resource;
 using Game.Media;
 
 
@@ -21,7 +20,7 @@ public class UIMusicController : UIControllerBase<UIMusicController>
 		base.Show ();
 		SET_PARENT(sInstance , GUI_DEFINE.ANCHOR_CENTER);
 		
-		this.m_cMain = GameObject.Instantiate(ResourcesManager.LoadResources(MAIN_RES)) as GameObject;
+		this.m_cMain = GameObject.Instantiate(Resources.Load(MAIN_RES)) as GameObject;
 		SET_PARENT(this.m_cMain , sInstance);
 
 		this.m_cView = this.m_cMain.GetComponent<UIViewMusic>();

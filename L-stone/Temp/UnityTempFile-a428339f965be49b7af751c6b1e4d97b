@@ -3,7 +3,6 @@
 -nowarn:0169
 -out:'Temp/Assembly-CSharp-firstpass.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
--r:'Assets/Scripts/Core/Resource/Unity3DGameResource.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -define:UNITY_4_5_0
 -define:UNITY_4_5

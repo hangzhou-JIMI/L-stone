@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using Game.Resource;
 using Game.Media;
 
 
@@ -17,7 +16,7 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 {
 	private const string MAIN_RES = "GUIGame";
 	private UIViewGame m_cView;	//view
-	private int m_iLevel;
+	public int m_iLevel;
 	
 	/// <summary>
 	/// Starts the game.
@@ -38,7 +37,7 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 		base.Show();
 		SET_PARENT(sInstance , GUI_DEFINE.ANCHOR_CENTER);
 		
-		this.m_cMain = GameObject.Instantiate(ResourcesManager.LoadResources(MAIN_RES)) as GameObject;
+		this.m_cMain = GameObject.Instantiate(Resources.Load(MAIN_RES)) as GameObject;
 		SET_PARENT(this.m_cMain , sInstance);
 		
 		this.m_cView = this.m_cMain.GetComponent<UIViewGame>();
@@ -103,7 +102,7 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 			if(this.m_iLevel <= 0 )
 				this.m_iLevel = 1;
 			Debug.Log("lose");
-			UIGameLoseController.sInstance.Show();
+			UIGameLoseExController.sInstance.Show();
 			break;
 		}
 		this.m_cView.level.text = "" + this.m_iLevel;
