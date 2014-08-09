@@ -27,6 +27,14 @@ public class UIMusicController : UIControllerBase<UIMusicController>
 
 		tk2dUIItem back = this.m_cView.backbtn;
 		back.OnClick += OnClickBack;
+
+//		int se = PlayerPrefs.GetInt("SE_Switch");
+//		int bgm = PlayerPrefs.GetInt("BMG_Switch");
+//		this.m_cView.SEbtn.GetComponent<tk2dSprite>().SetSprite(se>0?"":"");
+//		this.m_cView.BMGbtn.GetComponent<tk2dSprite>().SetSprite(bgm>0?"":"");
+//
+//		this.m_cView.SEbtn.OnClick += null;
+//		this.m_cView.BMGbtn.OnClick += null;
 	}
 
 	/// <summary>
@@ -36,6 +44,16 @@ public class UIMusicController : UIControllerBase<UIMusicController>
 	{
 		base.Hiden ();
 		Destroy();
+	}
+
+	private void OnClickSE()
+	{
+		//
+	}
+
+	private void OnClickBMG()
+	{
+		//
 	}
 
 	private void OnClickBack()

@@ -23,8 +23,31 @@ public class GAMEUtil
 	{
 		self = Random.Range(0,3);
 		pc = self;
-		float winRate = 0.5f-CubicIn(level/100f,0,1,1)*0.2f;
-		float pingRate = (1-winRate)/2f;
+		float winRate = 0.5f-(CubicIn(level/100f,0,1,1)>1f?1f:CubicIn(level/100f,0,1,1))*0.2f;
+		float pingRate = (1-winRate)-0.25f;
+		Debug.Log(pingRate + " - " + winRate);
+		int result = BET( pingRate , winRate );
+		switch( result )
+		{
+		case 1: //win
+			pc = (self + 1 )%3;
+			break;
+		case 0:	//ping
+			pc = self;
+			break;
+		case -1://lose
+			pc = self - 1 < 0? 2 : self - 1;
+			break;
+		}
+		return result;
+	}
+
+	public static int StoneCalculateEx(int level , out int self , out int pc )
+	{
+		self = Random.Range(0,3);
+		pc = self;
+		float winRate = 0.5f-(CubicIn(level/100f,0,1,1)>1f?1f:CubicIn(level/100f,0,1,1))*0.1f;
+		float pingRate = (1-winRate)-0.1f;
 		Debug.Log(pingRate + " - " + winRate);
 		int result = BET( pingRate , winRate );
 		switch( result )

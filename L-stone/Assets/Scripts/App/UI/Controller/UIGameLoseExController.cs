@@ -79,9 +79,9 @@ public class UIGameLoseExController : UIControllerBase<UIGameLoseExController>
 		//
 		MediaMgr.sInstance.PlaySE(GUI_DEFINE.SE_btn);
 		
-		string str = "我已经到了"+GameData.s_iLevel+"层，这个游戏根本停不下来。http://www.luzexi.com";
+		string str = "我已经到了"+GameData.s_iLevel+"层，这个游戏根本停不下来。 乐石斗: https://itunes.apple.com/us/app/le-shi-dou-shi-tou-jian-dao-bu/id907729227?l=zh&ls=1&mt=8";
 		if(UIGameFinalController.sInstance.IsShow)
-			str = "突破终结模式"+UIGameFinalController.sInstance.m_iLevel+"层,这个游戏根本停不下来.http://www.luzexi.com";
+			str = "突破终结模式"+UIGameFinalController.sInstance.m_iLevel+"层,这个游戏根本停不下来. 乐石斗: https://itunes.apple.com/us/app/le-shi-dou-shi-tou-jian-dao-bu/id907729227?l=zh&ls=1&mt=8";
 		//string str = "你好";
 		//		byte[] data = Encoding.Convert(Encoding.Unicode , Encoding.UTF8 , Encoding.Unicode.GetBytes(str));
 		//		char[] chars = new char[Encoding.UTF8.GetCharCount(data)];
