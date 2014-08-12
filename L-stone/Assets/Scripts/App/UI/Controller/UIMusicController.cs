@@ -27,6 +27,11 @@ public class UIMusicController : UIControllerBase<UIMusicController>
 
 		tk2dUIItem back = this.m_cView.backbtn;
 		back.OnClick += OnClickBack;
+
+		UpdateSE();
+		UpdateBMG();
+		this.m_cView.SEbtn.OnClick += OnClickSE;
+		this.m_cView.BMGbtn.OnClick += OnClickBMG;
 	}
 
 	/// <summary>
@@ -36,6 +41,35 @@ public class UIMusicController : UIControllerBase<UIMusicController>
 	{
 		base.Hiden ();
 		Destroy();
+	}
+
+	private void UpdateSE()
+	{
+		this.m_cView.SEbtn.GetComponent<tk2dSprite>().SetSprite(GameData.s_bSE?"L4_0001_yes":"L4_0000_no");
+	}
+
+	private void UpdateBMG()
+	{
+		this.m_cView.BMGbtn.GetComponent<tk2dSprite>().SetSprite(GameData.s_bBMG?"L4_0001_yes":"L4_0000_no");
+	}
+
+	private void OnClickSE()
+	{
+		GameData.s_bSE = !GameData.s_bSE;
+		GameData.Save();
+		UpdateSE();
+
+		if(!GameData.s_bSE)
+			MediaMgr.sInstance.StopENV();
+	}
+
+	private void OnClickBMG()
+	{
+		GameData.s_bBMG = !GameData.s_bBMG;
+		GameData.Save();
+		UpdateBMG();
+		if(!GameData.s_bBMG)
+			MediaMgr.sInstance.StopBGM();
 	}
 
 	private void OnClickBack()

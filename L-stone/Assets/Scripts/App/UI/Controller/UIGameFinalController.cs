@@ -84,7 +84,7 @@ public class UIGameFinalController : UIControllerBase<UIGameFinalController>
 		this.m_cView.selfAni.Stop();
 		this.m_cView.pcAni.Stop();
 		int self , pc;
-		int win =GAMEUtil.StoneCalculate(this.m_iLevel , out self , out pc);
+		int win =GAMEUtil.StoneCalculateEx(this.m_iLevel , out self , out pc);
 		switch(win)
 		{
 		case 0:

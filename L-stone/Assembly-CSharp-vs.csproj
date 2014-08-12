@@ -58,6 +58,7 @@
      <Compile Include="Assets\APPUIView\UIViewProducer.cs" />
      <Compile Include="Assets\APPUIView\UIViewSetting.cs" />
      <Compile Include="Assets\APPUIView\UIViewTittle.cs" />
+     <Compile Include="Assets\Scripts\App\CApplication.cs" />
      <Compile Include="Assets\Scripts\App\Model\GameData.cs" />
      <Compile Include="Assets\Scripts\App\Model\Model\Model.cs" />
      <Compile Include="Assets\Scripts\App\Model\Model\ModelMgr.cs" />
@@ -85,7 +86,6 @@
      <Compile Include="Assets\Scripts\Core\Controller\INPUT_INFO.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\UIControllerBase.cs" />
      <Compile Include="Assets\Scripts\Core\Controller\UIEvent.cs" />
-     <Compile Include="Assets\Scripts\Core\Main\CApplication.cs" />
      <Compile Include="Assets\Scripts\Core\Media\AudioPlayer.cs" />
      <Compile Include="Assets\Scripts\Core\Media\MediaMgr.cs" />
      <Compile Include="Assets\Scripts\Core\Scene\CScene.cs" />
@@ -194,6 +194,9 @@
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
+ <Reference Include="U3DPushMessageLibrary">
+ <HintPath>/Users/luzexi/Desktop/Work/Project/L-stone/L-stone/Assets/Scripts/Core/PushMessage/U3DPushMessageLibrary.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">

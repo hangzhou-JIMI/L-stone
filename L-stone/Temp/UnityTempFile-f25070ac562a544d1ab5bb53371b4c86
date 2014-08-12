@@ -9,6 +9,7 @@
 -r:'Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll'
 -r:'Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
+-r:'Assets/Scripts/Core/PushMessage/U3DPushMessageLibrary.dll'
 -define:UNITY_4_5_0
 -define:UNITY_4_5
 -define:UNITY_IPHONE

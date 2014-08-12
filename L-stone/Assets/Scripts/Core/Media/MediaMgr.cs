@@ -82,6 +82,8 @@ namespace Game.Media
 		/// <param name="clip">Clip.</param>
 		public void PlayBGM( AudioClip clip , bool useFade = false )  
 		{
+			if(!GameData.s_bBMG)
+				return;
 			if(this.m_cBGM == null )
 			{
 				this.m_cBGM = (new GameObject("BGM")).AddComponent<AudioPlayer>();
@@ -108,6 +110,17 @@ namespace Game.Media
 		}
 
 		/// <summary>
+		/// Stops the background.
+		/// </summary>
+		public void StopBGM()
+		{
+			if(this.m_cBGM!= null )
+			{
+				this.m_cBGM.Stop();
+			}
+		}
+
+		/// <summary>
 		/// Plaies the S.
 		/// </summary>
 		/// <returns>The S.</returns>
@@ -125,6 +138,7 @@ namespace Game.Media
 		/// <param name="clip">Clip.</param>
 		public AudioPlayer PlaySE( AudioClip clip )
 		{
+			if(!GameData.s_bSE) return null;
 			AudioPlayer ap = null;
 			if( this.m_lstEnableSE.Count > MAX_SE )
 			{
@@ -160,6 +174,7 @@ namespace Game.Media
 		/// <param name="clip">Clip.</param>
 		public AudioPlayer PlayENV( AudioClip clip )
 		{
+			if(!GameData.s_bSE) return null;
 			AudioPlayer ap = null;
 			if( this.m_lstEnableENV.Count > MAX_SE )
 			{
