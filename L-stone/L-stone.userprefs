@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/Media/MediaMgr.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/App/CApplication.cs">
     <Files>
       <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/Editor/EditorBNode.cs" Line="1" Column="1" />
       <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/Editor/EditorBTree.cs" Line="1" Column="1" />
@@ -9,20 +9,18 @@
       <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/Editor/EditorBTreeMgr.cs" Line="1" Column="1" />
       <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/AIManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/App/UI/Controller/UIGameFinalController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/CApplication.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Core/Media/MediaMgr.cs" Line="121" Column="4" />
+      <File FileName="Assets/Scripts/App/CApplication.cs" Line="39" Column="75" />
+      <File FileName="Assets/Scripts/Core/Media/MediaMgr.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="App" expanded="True" />
-              <Node name="Core" expanded="True">
-                <Node name="Media" expanded="True">
-                  <Node name="AudioPlayer.cs" selected="True" />
-                </Node>
+              <Node name="App" expanded="True">
+                <Node name="CApplication.cs" selected="True" />
               </Node>
+              <Node name="Core" expanded="True" />
             </Node>
           </Node>
         </State>
