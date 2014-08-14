@@ -1,42 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/App/CApplication.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/GFX/GfxObject.cs">
     <Files>
-      <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/Editor/EditorBNode.cs" Line="1" Column="1" />
-      <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/Editor/EditorBTree.cs" Line="1" Column="1" />
-      <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/Base/BNode.cs" Line="1" Column="1" />
-      <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/BNodeFactory.cs" Line="1" Column="1" />
-      <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/Editor/EditorBTreeMgr.cs" Line="1" Column="1" />
-      <File FileName="../../Unity3DAIBehaviorTree/U3DAIBehaviorTree/Assets/Scripts/AIBehaviorTree/AIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/UI/Controller/UIGameFinalController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/App/CApplication.cs" Line="39" Column="75" />
-      <File FileName="Assets/Scripts/Core/Media/MediaMgr.cs" Line="1" Column="1" />
+      <File FileName="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/Battle/AIControl.cs" Line="1" Column="1" />
+      <File FileName="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/GFX/GfxObject.cs" Line="31" Column="3" />
+      <File FileName="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/GFX/CTransform.cs" Line="1" Column="1" />
+      <File FileName="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/GFX/CAnimation.cs" Line="22" Column="1" />
+      <File FileName="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/GFX/State/StateControl.cs" Line="11" Column="2" />
+      <File FileName="../../Unity3DFSM/Unity3DFSM/Assets/Scripts/Battle/CmdControl.cs" Line="11" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="App" expanded="True">
-                <Node name="CApplication.cs" selected="True" />
-              </Node>
-              <Node name="Core" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>bytes[0]</Value>
-          <Value>bytes[1]</Value>
-          <Value>m</Value>
-          <Value>n</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
